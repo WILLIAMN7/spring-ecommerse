@@ -48,7 +48,7 @@ public class UsuarioController {
 		logger.info("accesos : {}", usuario);
 		
 		Optional<Usuario> user = usuarioService.findByEmail(usuario.getEmail());
-		logger.info("Usuario de db: {}", user.get());
+		//logger.info("Usuario de db: {}", user.get());
 		if(user.isPresent()) {
 			session.setAttribute("idusuario", user.get().getId());
 			if(user.get().getTipo().equals("ADMIN")) {

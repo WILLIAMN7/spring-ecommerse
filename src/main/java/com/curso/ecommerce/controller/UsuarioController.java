@@ -5,7 +5,6 @@ import java.util.Optional;
 
 import javax.servlet.http.HttpSession;
 
-import org.apache.logging.log4j.spi.LoggerRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +24,7 @@ import com.curso.ecommerce.service.IUsuarioService;
 @RequestMapping("/usuario")
 public class UsuarioController {
 	
-	private final Logger logger = LoggerFactory.getLogger(ProductoController.class);
+	private final Logger logger = LoggerFactory.getLogger(UsuarioController.class);
 	
 	@Autowired
 	private IUsuarioService usuarioService;

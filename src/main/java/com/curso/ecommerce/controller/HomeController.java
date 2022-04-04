@@ -20,7 +20,7 @@ import com.curso.ecommerce.model.Orden;
 import com.curso.ecommerce.model.Producto;
 import com.curso.ecommerce.model.Usuario;
 import com.curso.ecommerce.service.IUsuarioService;
-import com.curso.ecommerce.service.ProductoService;
+import com.curso.ecommerce.service.IProductoService;
 
 @Controller
 @RequestMapping("/")
@@ -29,7 +29,7 @@ public class HomeController {
 	private final Logger log = LoggerFactory.getLogger(ProductoController.class);
 	
 	@Autowired
-	private ProductoService productoService;
+	private IProductoService productoService;
 	@Autowired
 	private IUsuarioService usuarioService;
 	

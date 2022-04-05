@@ -1,6 +1,6 @@
 <!-- Navigation -->
 <div th:fragment="header">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 		<div class="container">
 			<a class="navbar-brand" th:href="@{/administrador}">Spring eCommerce</a>
 
@@ -8,7 +8,7 @@
 				<input class="form-control mr-sm-2" type="search"
 					placeholder="Buscar" aria-label="Search" name="nombre"
 					autocomplete="off">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+				<button class="btn btn-outline-success my-2 my-sm-0 bg-success text-white" type="submit">Buscar</button>
 			</form>
 
 
@@ -20,7 +20,7 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item dropdown"><a
-							class="nav-link dropdown-toggle" href="#"
+							class="nav-link dropdown-toggle text-white" href="#"
 							id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="false"> ADMIN </a>
 							
@@ -42,7 +42,7 @@
 
 <!-- Footer -->
 <div th:fragment="footer">
-	<footer class="py-5 bg-dark">
+	<footer class="py-5 bg-primary">
 		<div class="container">
 			<p class="m-0 text-center text-white">Copyright &copy; Spring
 				eCommerce 2022</p>
